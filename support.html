@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WhisperKeyboard – Support</title>
+<style>
+  :root { --text:#1d1d1f; --muted:#6e6e73; --bg:#ffffff; --card:#f5f5f7; --accent:#6c63ff; }
+  @media (prefers-color-scheme: dark) { :root { --text:#f5f5f7; --muted:#a1a1a6; --bg:#111114; --card:#1c1c20; --accent:#9d97ff; } }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  .muted { color:var(--muted); }
+  .contact { background:var(--card); border-radius:14px; padding:16px 20px; margin:20px 0; }
+  details { background:var(--card); border-radius:12px; padding:12px 16px; margin:10px 0; }
+  summary { font-weight:600; cursor:pointer; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<h1>WhisperKeyboard Support</h1>
+<p class="muted">On-device voice dictation and a voice keyboard for iPhone and iPad.</p>
+
+<div class="contact">
+  <strong>Need help?</strong> Email <a href="mailto:[CONTACT EMAIL]">amolpict@gmail.com</a> — we usually reply within 2 working days.
+  Please include your device model, iOS version and what happened.
+</div>
+
+<h2>Getting started</h2>
+<ol>
+  <li>Open WhisperKeyboard and allow Microphone and Speech Recognition.</li>
+  <li>Wait for the speech model to show “Ready” (downloads once on first use).</li>
+  <li>Go to iOS Settings › General › Keyboard › Keyboards › Add New Keyboard › WhisperKeyboard, then turn on <strong>Allow Full Access</strong>.</li>
+  <li>Open WhisperKeyboard once to turn on the keyboard mic, switch to any app, tap 🌐 to choose WhisperKeyboard, and tap the mic.</li>
+</ol>
+
+<h2>Common questions</h2>
+
+<details><summary>The keyboard says “Open the WhisperKeyboard app to turn on the mic”</summary>
+<p>iOS doesn't let keyboards use the microphone directly, so the app holds the mic session. Open WhisperKeyboard, then switch back. The session ends after the idle time set in Settings or when you tap End.</p></details>
+
+<details><summary>Why does the keyboard need Full Access?</summary>
+<p>Only so the keyboard can receive dictated text from the app on your device. The keyboard doesn't record, store or send what you type, and iOS never uses it in password fields.</p></details>
+
+<details><summary>“Apple Intelligence is busy” or “Rewrite skipped”</summary>
+<p>Your words were still inserted, just without the rewrite. Apple limits its on-device model while apps are in the background and sometimes declines to rewrite. Wait a moment and try again, use the Voice to Text mode, or choose Claude in Settings › Rewrite.</p></details>
+
+<details><summary>Search boxes only get plain text</summary>
+<p>In search fields the keyboard inserts exactly what you said. Modes like Email work in notes, mail and chat apps.</p></details>
+
+<details><summary>Which languages are supported?</summary>
+<p>Parakeet (default) is English. Choose Whisper Small in Settings for about 100 languages, or Apple Speech for the languages added in iOS Dictation settings.</p></details>
+
+<details><summary>Is my voice sent anywhere?</summary>
+<p>No. Speech is turned into text on your device. See the <a href="./">Privacy Policy</a>.</p></details>
+</main>
+</body>
+</html>
